@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fashion - Login</title>
+
+        <!-- Fashion Favicon -->
+        <link
+            rel="shortcut icon"
+            href="assets/images/favicon.svg"
+            type="image/x-icon"
+        />
+
+        <!-- FONTS -->
+        <!-- Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Source Sans Pro -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS -->
+        <!-- Reset -->
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <!-- Config -->
+        <link rel="stylesheet" href="assets/css/config.css" />
+        <!-- Styles -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <!-- Responsive -->
+        <link rel="stylesheet" href="assets/css/responsive-xs.css" />
+        <link rel="stylesheet" href="assets/css/responsive-sm.css" />
+        <link rel="stylesheet" href="assets/css/responsive-md.css" />
+        <link rel="stylesheet" href="assets/css/responsive-lg.css" />
+    </head>
+
+    <body>
+        <div class="app">
+            <div class="container">
+                <div class="login-welcome">
+                    <h1>Fashion</h1>
+                    <span>Welcome back! Please login to your account.</span>
+                </div>
+                <form action="#" class="login-form" novalidate>
+                    <div class="inputs-container">
+                        <div class="input-control">
+                            <input
+                                type="text"
+                                id="username"
+                                autocomplete="off"
+                                onchange="Empty(this)"
+                            />
+                            <label for="username">Username</label>
+                        </div>
+                        <div class="input-control">
+                            <input
+                                type="password"
+                                id="password"
+                                autocomplete="off"
+                                onchange="Empty(this)"
+                            />
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <div class="remember-forgot-container">
+                        <div class="remember-control">
+                            <label for="remember_me">Remember me</label>
+                            <input type="checkbox" id="remember_me" />
+                        </div>
+                        <a href="#" class="forgot-link">Forgot password</a>
+                    </div>
+                    <div class="buttons-container">
+                        <button type="submit" class="button login-button">
+                            Login
+                        </button>
+                        <a href="#" class="button sign-up-button">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="assets/js/scripts.js" defer></script>
+    </body>
+</html>

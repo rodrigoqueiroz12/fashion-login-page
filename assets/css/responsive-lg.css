@@ -1,0 +1,11 @@
+@media (min-width: 992px) and (max-width: 1200px) {
+  .app {
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: right;
+  }
+
+  .container {
+    padding: 3rem;
+  }
+}

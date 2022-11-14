@@ -1,0 +1,17 @@
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary: #0A1315;
+  --primary-hover: #0a1315d4;
+  --transparent: transparent;
+}
+
+body {
+  background: linear-gradient(45deg, rgba(205, 224, 230, 1) 0%, rgba(186, 208, 221, 1) 100%);
+}
+
+* {
+  box-sizing: border-box;
+}

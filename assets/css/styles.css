@@ -1,0 +1,226 @@
+h1,
+span,
+label,
+input,
+button,
+a {
+  color: var(--primary);
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  background-image: url("/assets/images/fashion-background.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-right: 150px;
+  gap: 5rem;
+}
+
+.container .login-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1.5rem;
+}
+
+.login-welcome h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+
+  letter-spacing: .2em;
+
+  cursor: default;
+}
+
+.login-welcome span {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+
+  opacity: .9;
+
+  cursor: default;
+}
+
+form.login-form {
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+}
+
+form.login-form .inputs-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+
+.inputs-container .input-control {
+  position: relative;
+}
+
+.inputs-container .input-control label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  user-select: none;
+  position: absolute;
+  transition-duration: .2s;
+
+  top: 50%;
+  translate: 0% -50%;
+  left: 5px;
+
+  cursor: text;
+}
+
+.inputs-container .input-control label.active {
+  top: -10%;
+  left: 0%;
+  font-size: 1rem;
+}
+
+.inputs-container .input-control input {
+  background-color: var(--transparent);
+
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--primary);
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 1.5rem;
+}
+
+.inputs-container .input-control input:focus~label {
+  top: -10%;
+  left: 0%;
+  font-size: 1rem;
+}
+
+.remember-forgot-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot-container .remember-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: .5rem;
+}
+
+.remember-forgot-container .remember-control label {
+  order: 2;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+.remember-forgot-container .remember-control input {
+  appearance: none;
+  height: 1.5rem;
+  width: 1.5rem;
+
+  border: 1px solid var(--primary);
+  border-radius: 3px;
+
+  cursor: pointer;
+
+  transition-duration: .3s;
+}
+
+.remember-forgot-container .remember-control input:checked {
+  background-color: var(--primary);
+}
+
+.remember-forgot-container a.forgot-link {
+  display: flex;
+  align-items: center;
+
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  text-transform: capitalize;
+  text-decoration: none;
+
+  transition-duration: .3s;
+}
+
+.remember-forgot-container a.forgot-link:hover {
+  color: var(--primary-hover);
+}
+
+.buttons-container {
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 3rem;
+}
+
+.buttons-container .button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  height: 50px;
+  width: 180px;
+
+  border: none;
+  border-radius: 4px;
+  transition-duration: .3s;
+}
+
+.buttons-container .login-button {
+  color: #fff;
+  background-color: var(--primary);
+}
+
+.buttons-container .login-button:hover {
+  background-color: var(--primary-hover);
+}
+
+.buttons-container .sign-up-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--primary);
+  background-color: var(--transparent);
+
+  text-decoration: none;
+}
+
+.buttons-container .sign-up-button:hover {
+  color: #fff;
+  background-color: var(--primary);
+}

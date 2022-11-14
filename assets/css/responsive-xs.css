@@ -1,0 +1,18 @@
+@media (max-width: 576px) {
+  .app {
+    align-items: center;
+    justify-content: center;
+    background: none;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .container form.login-form {
+    width: 100%;
+
+    padding: 0px 1.5rem;
+  }
+}
